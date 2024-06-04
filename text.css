@@ -1,7 +1,45 @@
 body{
-    background-color: rgb(65, 63, 63);
-};
+    font-family: 'Trebuchet MS', 'arial', 'helvetica', 'Open Sans', sans-serif;
 
-div{
-    background-color:aliceblue;
+}
+#cabecalho1{
+    color: #0071ad;
+    background-color: #efedea;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cabecalho2{
+    image-orientation: center;
+    background-color: #f5f3f0;
+}
+
+#imagem_correios{
+    width: 150px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    margin: auto;
+    display: block;
+    
+}
+
+#descricao{
+    font-size: 10px;
+    text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#digitacao{
+    text-align: center;
+}
+
+button{
+    background-color: #00a8dd;
+    border-width: 1px;
+    border-radius: 2px;
 }
