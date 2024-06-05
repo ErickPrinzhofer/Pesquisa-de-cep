@@ -39,7 +39,11 @@ input::-webkit-inner-spin-button {
 }
 
 button{
+    height: 21px;
     background-color: #00a8dd;
     border-width: 1px;
     border-radius: 2px;
+}
+#resultado{
+    text-align:center;
 }

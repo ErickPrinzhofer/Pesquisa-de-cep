@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de cep</title>
     <link rel="stylesheet" href="text.css"/>
+    <script src="CEP.js"></script>
 </head>
 <body>
     <div id="cabecalho1">
@@ -21,7 +22,16 @@
         </p>
     </div>
     <div id="digitacao">
-        Digite um CEP: <input id="txtcep" type="number">    <button>Pesquisar</button>
+        Digite um CEP: <input id="txtcep" type="number">    <button onclick="pesquisar()">Pesquisar</button>
+    </div>
+    <br>
+    <div id="resultado">
+        CEP: _________________________ <br>
+        Rua: _________________________<br>
+        Bairro: _______________________<br>
+        Cidade: ______________________<br>
+        UF: __________________________<br>
+        DDD: _________________________
     </div>
     
     
