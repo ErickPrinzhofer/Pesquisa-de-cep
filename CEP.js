@@ -15,7 +15,7 @@ function verificar() {
   const txtcep = document.getElementById('txtcep')
   const resultado = document.getElementById('resultado')
   const cep = txtcep.value
-  
+
   const headers = { 'Content-Type': 'application/json' };
   const urlCep = `https://viacep.com.br/ws/${cep}/json/`;   /// Troucar o valor do CEP por uma variavel
   axios.get(urlCep, { headers })
@@ -26,7 +26,14 @@ function verificar() {
       const uf = (response.data.uf);          //Tipo SP/
       const ddd = (response.data.ddd);         //DDD
 
-      resultado.textContent = `Rua: ${rua}Bairro:  ${bairro}\nCidade: ${cidade}\nUF: ${uf}\nDDD: ${ddd}`
-    }
-    )
+      resultado.innerHTML = `
+      Rua: ${rua} <br/>
+      Bairro:  ${bairro} <br/>
+      Cidade: ${cidade} <br/>
+      UF: ${uf} <br/>
+      DDD: ${ddd}`;
+    })
+    .catch(error =>{
+      resultado.innerHTML = 'Erro na busca de CEP</br>Tente novamente'
+    })
 }
